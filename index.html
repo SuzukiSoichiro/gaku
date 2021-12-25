@@ -71,12 +71,14 @@
       
       function getLink(num) {
         var req = new XMLHttpRequest();
+        var link;
         req.open("get", "links.txt", true);
         req.send(null);
         req.onload = function() {
-          var texts = req.responseText.split("\n");
-          var text = texts[num];
+          var links = req.responseText.split("\n");
+          link = links[num];
         }
+        return link;
       }
   </script>
 </body>
