@@ -19,11 +19,11 @@
 
       let model, webcam, labelContainer, maxPredictions;
     
-      const  links = [
-        https://www.yakult-swallows.co.jp,
-        https://www.giants.jp/smartphone/,
-        https://sp.fighters.co.jp,
-        https://www.carp.co.jp
+      const links = [
+        "https://www.yakult-swallows.co.jp",
+        "https://www.giants.jp/",
+        "https://sp.fighters.co.jp",
+        "https://www.carp.co.jp"
       ];
 
       // Load the image model and setup the webcam
@@ -71,8 +71,8 @@
               if (prediction[i].probability.toFixed(3) > 0.970){
 //                 window.location.href = "link.html";
 //                 window.location.href = "https://www.yakult-swallows.co.jp";
-                   //window.location.href = getLink(i);
-                var link = links[i]
+//                 window.location.href = getLink(i);
+                link = links[i]
                 alert(link);
               }
           }
