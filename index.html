@@ -18,6 +18,13 @@
       const URL = "https://teachablemachine.withgoogle.com/models/HkglILcPB/";
 
       let model, webcam, labelContainer, maxPredictions;
+    
+      const  links = [
+        https://www.yakult-swallows.co.jp,
+        https://www.giants.jp/smartphone/,
+        https://sp.fighters.co.jp,
+        https://www.carp.co.jp
+      ];
 
       // Load the image model and setup the webcam
       async function init() {
@@ -65,21 +72,10 @@
 //                 window.location.href = "link.html";
 //                 window.location.href = "https://www.yakult-swallows.co.jp";
                    //window.location.href = getLink(i);
-                alert(getLink(i));
+                var link = links[i]
+                alert(link);
               }
           }
-      }
-      
-      function getLink(num) {
-        var req = new XMLHttpRequest();
-        var link;
-        req.open("get", "links.txt", true);
-        req.send(null);
-        req.onload = function() {
-          var links = req.responseText.split("\n");
-          link = links[num];
-        }
-        return link;
       }
   </script>
 </body>
