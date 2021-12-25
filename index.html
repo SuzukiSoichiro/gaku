@@ -69,11 +69,8 @@
               labelContainer.childNodes[i].innerHTML = classPrediction;
             
               if (prediction[i].probability.toFixed(3) > 0.970){
-//                 window.location.href = "link.html";
-//                 window.location.href = "https://www.yakult-swallows.co.jp";
-//                 window.location.href = getLink(i);
                 link = links[i]
-                alert(link);
+                window.location.href = link;
               }
           }
       }
