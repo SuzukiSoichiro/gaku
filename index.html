@@ -61,7 +61,7 @@
                   prediction[i].className + ": " + prediction[i].probability.toFixed(2);
               labelContainer.childNodes[i].innerHTML = classPrediction;
             
-              if (prediction[i].probability.toFixed(3) > 0.999 && i !== 0){
+              if (prediction[i].probability.toFixed(3) > 0.989 && i !== 0){
                 window.location.href = "link.html";
               }
           }
